@@ -1,13 +1,13 @@
 public class ClassesAndObjects {
     public static void main(String[] args) {
         Person person1 = new Person();
-        person1.setNameAndAge("Roman", 20);
-        int year1 = person1.calculateYearsToRetirement();
+        String s1 = "Roman";
+        person1.setNameAndAge(s1, 20);
         person1.speak();
 
         Person person2 = new Person();
-        String s1 = "Vova";
-        person2.setNameAndAge(s1, 30);
+        String s2 = "Vova";
+        person2.setNameAndAge(s2, 30);
         int year2 = person2.calculateYearsToRetirement();
         person2.speak();
     }
