@@ -14,7 +14,7 @@ public class ClassesAndObjects {
 }
 
 class Person {
-    String name;
+    private String name;
     int age;
 
     void setNameAndAge(String username, int userage) {
