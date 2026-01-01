@@ -1,21 +1,42 @@
 public class ClassesAndObjects {
     public static void main(String[] args) {
         Person person1 = new Person();
-        String s1 = "Roman";
-        person1.setNameAndAge(s1, 20);
+        person1.setName("Vova");
+        person1.setAge(12);
+        System.out.println("Output in the main method: " + person1.getName());
+        System.out.println("Output in the main method: " + person1.getAge());
         person1.speak();
-
-        Person person2 = new Person();
-        String s2 = "Vova";
-        person2.setNameAndAge(s2, 30);
-        int year2 = person2.calculateYearsToRetirement();
-        person2.speak();
     }
 }
 
 class Person {
     private String name;
-    int age;
+    private int age;
+
+    public void setName(String userName) {
+        if (userName.isEmpty()) {
+            System.out.println("Empty username!");
+        } else {
+            name = userName;
+        }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setAge(int userAge) {
+        if (userAge < 0) {
+            System.out.println("An age should be positive");
+        } else {
+            age = userAge;
+        }
+
+    }
+
+    public int getAge() {
+        return age;
+    }
 
     void setNameAndAge(String username, int userage) {
         name = username;
