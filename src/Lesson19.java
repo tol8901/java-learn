@@ -1,12 +1,12 @@
 public class Lesson19 {
     public static void main(String[] args) {
-        Human human1 = new Human();
+        Human1 human1 = new Human1();
         human1.setAge(18);
         human1.setName("Tom");
         human1.getInfo();
     }
 }
-class Human {
+class Human1 {
     String name;
     int age;
 
