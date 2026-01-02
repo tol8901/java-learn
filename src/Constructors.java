@@ -1,6 +1,6 @@
 public class Constructors {
     public static void main(String[] args) {
-/*
+
         Human h1 = new Human("Bob", 40);
         Human h2 = new Human("Tom", 30)
         Human.description = "Nice";
@@ -9,8 +9,6 @@ public class Constructors {
         Human.description = "Bad";
         h1.getAllFields();
         h2.getAllFields();
-*/
-
 
         System.out.println(Math.pow(2, 4));
         System.out.println(Math.PI);
