@@ -1,7 +1,20 @@
 public class Constructors {
     public static void main(String[] args) {
+/*
+        Human h1 = new Human("Bob", 40);
+        Human h2 = new Human("Tom", 30)
         Human.description = "Nice";
-        Human.getDescription();
+        h1.getAllFields();
+        h2.getAllFields();
+        Human.description = "Bad";
+        h1.getAllFields();
+        h2.getAllFields();
+*/
+
+
+        System.out.println(Math.pow(2, 4));
+        System.out.println(Math.PI);
+
     }
 }
 
@@ -25,5 +38,13 @@ class Human {
 
     public static void getDescription() {
         System.out.println(description);
+    }
+
+    public void getAllFields() {
+        System.out.println(name + ", " + age + ", " + description);
+    }
+
+    public static void printAllFields() {
+        System.out.println();
     }
 }
