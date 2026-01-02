@@ -1,25 +1,14 @@
 public class Constructors {
     public static void main(String[] args) {
-        Human h1 = new Human("Bob", 30);
-        h1.setName("Tom");
-
+        Human.description = "Nice";
+        Human.getDescription();
     }
 }
 
 class Human {
     private String name;
     private int age;
-
-    public Human() {
-        System.out.println("Hello from first constructor!");
-        this.name = "default name";
-        this.age = 0;
-    }
-
-    public Human(String name) {
-        System.out.println("Hello from second constructor!");
-        this.name = name;
-    }
+    public static String description;
 
     public Human(String name, int age) {
         System.out.println("Hello from third constructor!");
@@ -32,5 +21,9 @@ class Human {
     }
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public static void getDescription() {
+        System.out.println(description);
     }
 }
