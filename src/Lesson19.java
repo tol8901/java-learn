@@ -4,6 +4,7 @@ public class Lesson19 {
         human1.setAge(18);
         human1.setName("Tom");
         human1.getInfo();
+        System.out.println(human1);
     }
 }
 class Human1 {
@@ -28,5 +29,9 @@ class Human1 {
 
     public void getInfo() {
         System.out.println(name + ", " + age);
+    }
+
+    public String toString() {
+        return name + ", " + age;
     }
 }
