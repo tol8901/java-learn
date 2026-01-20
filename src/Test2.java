@@ -1,3 +1,5 @@
+import Packet1.Person;
+
 public class Test2 {
     public int id;
     private int id2;
@@ -12,5 +14,10 @@ public class Test2 {
 }
 
 class Test3{
+    public static void main(String[] args) {
+        Person person1 = new Person();
+//        person1.name = "Bob";
+
+    }
 
 }
